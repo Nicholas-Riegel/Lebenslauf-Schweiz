@@ -38,9 +38,14 @@ h4 { font-size: 1.10em; }
 /* Top Header Section */
 .top-header {
     width: 100%;
-    background-color: #b2b0d1;
+    background-color: #124792;
     padding: 25px 40px;
     border-bottom: 1px solid #e0e0e0;
+    color: white;
+}
+
+.top-header strong {
+    font-weight: 500;
 }
 
 .header-content {
@@ -62,7 +67,7 @@ h4 { font-size: 1.10em; }
 }
 
 .header-text .job-title {
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -120,7 +125,7 @@ h4 { font-size: 1.10em; }
    ================================ */
 .sidebar {
     width: 40%;
-    background-color: #cdccd046;  /* Change this to your desired color */
+    background-color: #4381e546;  /* Change this to your desired color */
     padding: 30px 20px 20px 40px;
     overflow: visible;
     display: flex;
@@ -141,25 +146,25 @@ h4 { font-size: 1.10em; }
 }
 
 /* Contact Items */
-.contact-item {
+.contacts p {
     margin-bottom: 10px;
 }
 
-.contact-item strong {
+.contacts strong {
     font-weight: 600;
 }
 
 /* Skills */
-.skill-item {
+.skills p {
     margin-bottom: 10px;
 }
 
 /* Languages */
-.language-item {
+.languages p {
     margin-bottom: 10px;
 }
 
-.language-item strong {
+.languages strong {
     font-weight: 600;
 }
 
@@ -169,7 +174,7 @@ h4 { font-size: 1.10em; }
    ================================ */
 .content {
     width: 70%;
-    padding: 30px 40px 20px 20px;
+    padding: 10px 40px 20px 20px;
     overflow: visible;
     display: flex;
     flex-direction: column;
