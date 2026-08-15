@@ -93,70 +93,19 @@ h4 { font-size: 1.10em; }
 }
 
 /* Contact Items */
-.contact-item {
+.contacts p {
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-item .label {
-    font-weight: 600;
-    /* color: #555; */
-    margin-bottom: 2px;
-}
-
-.contact-item span:last-child {
-    /* color: #666; */
-    word-break: break-word;
 }
 
 /* Skills */
-.skill-item {
+.skills p {
     margin-bottom: 15px;
 }
 
-.skill-item h4 {
-    font-weight: 700;
-    /* color: #333; */
-    margin-bottom: 6px;
-}
-
-.skill-item ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.skill-item li {
-    /* color: #666; */
-    margin-bottom: 4px;
-    padding-left: 12px;
-    position: relative;
-}
-
-.skill-item li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-}
-
-.skill-text {
-    /* color: #555; */
-    line-height: 1.4;
-    margin: 0;
-}
-
 /* Languages */
-.language-item {
-    display: flex;
-    justify-content: space-between;
+.languages p {
     margin-bottom: 8px;
 }
-
-.language-name {
-    font-weight: 600;
-    color: #333;
-}
-
 
 /* ================================
    MAIN CONTENT STYLES
@@ -202,6 +151,10 @@ h4 { font-size: 1.10em; }
     margin-bottom: 14px;
 }
 
+.job-entry ul {
+    padding-left: 40px;
+}
+
 .job-header {
     display: flex;
     justify-content: space-between;
@@ -209,7 +162,7 @@ h4 { font-size: 1.10em; }
     margin-bottom: 2px;
 }
 
-.job-entry .job-title {
+.job-title {
     font-weight: 700;
     color: #222;
     margin: 0;
@@ -227,26 +180,6 @@ h4 { font-size: 1.10em; }
     font-weight: 600;
     font-style: italic;
     margin-bottom: 6px;
-}
-
-.job-description {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.job-description li {
-    color: #555;
-    margin-bottom: 4px;
-    padding-left: 12px;
-    position: relative;
-    line-height: 1.4;
-}
-
-.job-description li:before {
-    content: "▪";
-    position: absolute;
-    left: 0;
 }
 
 /* Education Entry */
