@@ -1,0 +1,100 @@
+{
+    "header": {
+        "name": "Nicholas P. Riegel",
+        "title": "Softwareentwickler"
+    },
+    "summary": {
+        "title": "BERUFLICHES PROFIL",
+        "content": "Erfahrener Softwareentwickler mit aussergewöhnlich ausgeprägten analytischen und kommunikativen Fähigkeiten. Spezialisiert auf die Entwicklung von Full-Stack-Anwendungen und KI-basierten Softwarelösungen."
+    },
+    "image": {
+        "path": "./images/selfie_colored.jpeg",
+        "alt": "Profile Picture"
+    },
+    "sidebar": {
+        "sections": [
+            {
+                "title": "Kontakt",
+                "type": "contacts",
+                "items": [
+                { "label": "Email", "value": "nicholaspriegel@gmail.com" },
+                { "label": "Lokation", "value": "Bern, Schweiz" },
+                { "label": "Staatsbürgerschaft", "value": "Schweiz" },
+                { "label": "LinkedIn", "value": "/in/nicholas-riegel", "url": "https://www.linkedin.com/in/nicholas-riegel" }
+                ]
+            },
+            {
+                "title": "Fähigkeiten",
+                "type": "skills",
+                "items": [
+                { "label": "Programmiersprachen", "value": "Java, C#, Python, JavaScript, TypeScript" },
+                { "label": "Frameworks & Plattformen", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
+                { "label": "Datenbanken", "value": "PostgreSQL, MySQL, MongoDB" },
+                { "label": "AI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
+                { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium"},
+                { "label": "Webtechnologien", "value": "HTML5, CSS3, Tailwind CSS"},
+                { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira"},
+                { "label": "Methoden", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST-APIs, MVC, TDD"}
+                ]
+            },
+            {
+                "title": "Sprachen",
+                "type": "languages",
+                "items": [
+                { "label": "Englisch", "value": "Fliessend" },
+                { "label": "Deutsch", "value": "B2 – aktuell im C1-Kurs" },
+                { "label": "Französisch", "value": "C1" }
+                ]
+            }
+        ]
+    },
+    "employment": {
+        "title": "Berufliche Laufbahn",
+        "jobs": [
+            {
+                "title": "Softwareentwickler",
+                "dates": "2024 – 2026",
+                "company": "B.E. Moore, LLC",
+                "accomplishments": [
+                    "Entwicklung KI-gestützter Kollaborationstools zur Integration von LLMs in Produktivitäts-Workflows, Verbesserung der Teameffizienz und Automatisierung wiederkehrender Aufgaben.",
+                    "Entwicklung einer KI-gestützten Chat-Plattform mit Python, FastAPI, PostgreSQL und React.",
+                    "Entwicklung eines KI-gestützten E-Mail-Automatisierungssystems zur Analyse, Kategorisierung und Beantwortung eingehender Nachrichten.",
+                    "Erstellung einer Browsererweiterung zur Integration von LLM-Funktionen in Web-Workflows.",
+                    "Design von Backend-APIs für KI-Interaktionspipelines mit FastAPI und SQLAlchemy.",
+                    "Integration generativer KI-Modelle über OpenAI- und DeepSeek-APIs.",
+                    "Containerisierung von Diensten mit Docker für skalierbare Bereitstellung."
+                ]
+            },
+            {
+                "title": "Software-QA-Ingenieur",
+                "dates": "2021–2024",
+                "company": "CourseStorm, Inc.",
+                "accomplishments": [
+                    "Etablierung der ersten QA-Prozesse und Teststandards als alleiniger QA-Ingenieur des Unternehmens.",
+                    "Aufbau einer automatisierten End-to-End-Testsuite mit Laravel Dusk (PHP) zur Reduzierung von Regressionsfehler.",
+                    "Validierung von REST-APIs und Backend-Logik mit Postman und direkten Datenbankabfragen.",
+                    "Zusammenarbeit mit Entwicklungs- und Produktteams zur Definition von Akzeptanzkriterien in agilen Sprint-Zyklen.",
+                    "Ursachenanalyse komplexer Produktionsprobleme zur Vermeidung erneuter Ausfälle."
+                ]
+            },
+            {
+                "title": "Dozent",
+                "dates": "2015-2020",
+                "company": "Universität Bern | Migros Klubschule | The Hill School",
+                "accomplishments": [
+                    "Unterrichtete Philosophie und Englisch an verschiedenen Institutionen in der Schweiz und den USA."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Ausbildung",
+        "degrees": [
+            {
+                "degree": "Promotion in Philosophie (Dr. phil.)",
+                "year": "2010",
+                "institution": "University of Toronto, Toronto, Kanada"
+            }
+        ]
+    }
+}

@@ -1,10 +1,11 @@
 import './App.css'
+import Layout1 from './layouts/Layout1'
 
 function App() {
 
   return (
     <>
-      hello world
+      <Layout1 />
     </>
   )
 }
