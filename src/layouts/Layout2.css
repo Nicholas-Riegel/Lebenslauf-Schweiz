@@ -1,8 +1,38 @@
-/* ================================
-   SIDEBAR STYLES
-   ================================ */
+/* CONTAINER */
+.container {
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    border-bottom: 2px solid #333;
+    padding-bottom: 12px;
+}
+
+.header-text {
+    width: 60%;
+}
+
+.header h1 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.header .job-title {
+    color: #666;
+    font-weight: 500;
+}
+
+/* MAIN */
+main {
+    display: flex;
+}
+
+/* SIDEBAR */
 .sidebar {
-    width: 35%;
+    width: 55%;
     background-color: #e0dff246;  /* Change this to your desired color */
     padding: 30px 20px;
     overflow: visible;
@@ -26,7 +56,6 @@
     object-fit: cover;
 }
 
-/* Sidebar Sections */
 .sidebar-section {
     margin-bottom: 15px;
 }
@@ -40,17 +69,14 @@
     border-bottom: 2px solid #666;
 }
 
-/* Contact Items */
 .contacts p {
     margin-bottom: 10px;
 }
 
-/* Skills */
 .skills p {
     margin-bottom: 15px;
 }
 
-/* Languages */
 .languages p {
     margin-bottom: 8px;
 }
@@ -58,30 +84,14 @@
 /* ================================
    MAIN CONTENT STYLES
    ================================ */
-main {
+.main-section {
     width: 70%;
-    padding: 30px 25px;
+    /* padding: 30px 25px; */
     overflow: visible;
     display: flex;
     flex-direction: column;
 }
 
-/* Header */
-.header {
-    border-bottom: 2px solid #333;
-    padding-bottom: 12px;
-}
-
-.header h1 {
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 4px;
-}
-
-.header .job-title {
-    color: #666;
-    font-weight: 500;
-}
 
 /* Section Titles */
 .section-title {
@@ -94,7 +104,6 @@ main {
     border-bottom: 1px solid #999;
 }
 
-/* Job Entry */
 .job-entry {
     margin-bottom: 14px;
 }
@@ -130,7 +139,6 @@ main {
     margin-bottom: 6px;
 }
 
-/* Education Entry */
 .education-entry {
     margin-bottom: 12px;
 }
@@ -166,3 +174,4 @@ main {
     color: #666;
     margin: 0;
 }
+
