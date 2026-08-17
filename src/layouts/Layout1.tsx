@@ -22,7 +22,7 @@ const Layout1 = () => {
 						<h3 className="sidebar-title">{section.title}</h3>
 						{section.items.map((item, i) => (
 							<p key={i}>
-								<strong>{item.label}</strong>{' '}
+								<strong>{item.label}:</strong>{' '}
 								{item.url
 									? (<a href={item.url} target="_blank">{item.value}</a>)
 									: (item.value)
@@ -88,7 +88,7 @@ const Layout1 = () => {
 							<h4 className="school-name">{item.institution}</h4>
 						</article>
 					))}
-					
+
 				</section>
 			</main>
 		</div>
