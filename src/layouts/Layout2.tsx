@@ -15,8 +15,7 @@ const Layout1 = () => {
                     <h1>{header.name}</h1>
                     <h3 className="job-title">{header.title}</h3>
                     <p>{summary.content}</p>
-                    </div>
-				
+                    </div>				
                 <div className="profile-picture">
 					<img src={image.path} alt={image.alt} />
 				</div>
@@ -26,12 +25,11 @@ const Layout1 = () => {
 			<main>
 			
                 {/* Sidebar */}
-                <aside className="sidebar">
-            
+                <aside className="sidebar">            
 
                     {/* Sidebar Sections */}
-                    {sidebar.sections.map((section) => (
-                        <section key={section.type} className={`sidebar-section ${section.type}`}>
+                    {sidebar.sections.map((section, i) => (
+                        <section key={i} className={`sidebar-section ${section.type}`}>
                             <h3 className="sidebar-title">{section.title}</h3>
                             {section.items.map((item, i) => (
                                 <p key={i}>
