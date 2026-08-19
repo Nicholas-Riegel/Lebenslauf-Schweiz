@@ -1,60 +1,118 @@
-/* CONTAINER */
+
+
+/* ================================
+   PAGE & CONTAINER SETUP
+   ================================ */
 .container {
+    display: flex;
     flex-direction: column;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    page-break-after: always;
 }
 
-/* HEADER */
-.header {
-    border-bottom: 2px solid #333;
-    padding-bottom: 12px;
+/* Top Header Section */
+.top-header {
+    width: 100%;
+    background-color: #124792;
+    padding: 25px 40px;
+    border-bottom: 1px solid #e0e0e0;
+    color: white;
 }
 
-.header-text {
-    width: 60%;
-}
-
-.header h1 {
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 4px;
-}
-
-.header .job-title {
-    color: #666;
+.top-header strong {
     font-weight: 500;
 }
 
-/* MAIN */
-main {
+.header-content {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
 }
 
-/* SIDEBAR */
-.sidebar {
-    width: 55%;
-    background-color: #e0dff246;  /* Change this to your desired color */
-    padding: 30px 20px;
-    overflow: visible;
+.header-text {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.profile-picture {
+.header-text h1 {
+    margin-bottom: 8px;
+}
+
+.header-text .job-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.professional-summary {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.header-picture {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     background-color: #d0d0d0;
-    margin: 0 auto 25px;
     overflow: hidden;
-    border: 3px solid #999;
+    border: 2px solid #999;
+    flex-shrink: 0;
 }
 
-.profile-picture img {
+.header-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Main Layout (Two Column) */
+.main-layout {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+@media print {
+    body {
+        background: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+    
+    .top-header,
+    .main-layout {
+        break-inside: avoid;
+    }
+}
+
+/* ================================
+   SIDEBAR STYLES
+   ================================ */
+.sidebar {
+    width: 40%;
+    background-color: #4381e546;  /* Change this to your desired color */
+    padding: 30px 20px 20px 40px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar Sections */
 .sidebar-section {
     margin-bottom: 15px;
 }
@@ -62,53 +120,63 @@ main {
 .sidebar-title {
     font-weight: 700;
     text-transform: uppercase;
-    /* color: #333; */
     margin-bottom: 12px;
     padding-bottom: 8px;
     border-bottom: 2px solid #666;
 }
 
+/* Contact Items */
 .contacts p {
     margin-bottom: 10px;
 }
 
-.skills p {
-    margin-bottom: 15px;
+.contacts strong {
+    font-weight: 600;
 }
 
-.languages p {
-    margin-bottom: 8px;
+/* Skills */
+.skills p {
+    margin-bottom: 10px;
 }
+
+/* Languages */
+.languages p {
+    margin-bottom: 10px;
+}
+
+.languages strong {
+    font-weight: 600;
+}
+
 
 /* ================================
    MAIN CONTENT STYLES
    ================================ */
-.main-section {
+.content {
     width: 70%;
-    /* padding: 30px 25px; */
+    padding: 10px 40px 20px 20px;
     overflow: visible;
     display: flex;
     flex-direction: column;
 }
 
-
 /* Section Titles */
 .section-title {
     font-weight: 700;
     text-transform: uppercase;
-    color: #333;
     margin-top: 18px;
     margin-bottom: 12px;
     padding-bottom: 6px;
     border-bottom: 1px solid #999;
 }
 
+/* Job Entry */
 .job-entry {
     margin-bottom: 14px;
 }
 
 .job-entry ul {
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
 .job-header {
@@ -118,26 +186,25 @@ main {
     margin-bottom: 2px;
 }
 
-.job-title {
+.job-entry .job-title {
     font-weight: 700;
-    color: #222;
     margin: 0;
 }
 
 .job-date {
-    color: #666;
     font-weight: 500;
     white-space: nowrap;
     margin-left: 10px;
 }
 
 .company-name {
-    color: #555;
     font-weight: 600;
     font-style: italic;
     margin-bottom: 6px;
 }
 
+
+/* Education Entry */
 .education-entry {
     margin-bottom: 12px;
 }
@@ -151,26 +218,103 @@ main {
 
 .education-entry .degree {
     font-weight: 700;
-    color: #222;
     margin: 0;
 }
 
 .edu-date {
-    color: #666;
     font-weight: 500;
     white-space: nowrap;
     margin-left: 10px;
 }
 
 .school-name {
-    color: #555;
     font-weight: 600;
     font-style: italic;
     margin-bottom: 2px;
 }
 
 .edu-details {
-    color: #666;
     margin: 0;
 }
+
+/* ================================
+   PRINT OPTIMIZATION
+   ================================ */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    .sidebar,
+    .content {
+        overflow: visible;
+    }
+}
+
+/* ================================
+   PAGE BREAK HANDLING
+   ================================ */
+.main-section {
+    page-break-inside: avoid;
+}
+
+.job-entry {
+    page-break-inside: avoid;
+}
+
+.education-entry {
+    page-break-inside: avoid;
+}
+
+/* ================================
+   PAGE BREAK VISUAL GUIDE
+   ================================ */
+/* Shows where A4 page breaks occur (hidden on print) */
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(20px + 297mm);  
+    height: 2px;
+    background: repeating-linear-gradient(
+        90deg,
+        #ff0000 0,
+        #ff0000 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    z-index: 9999;
+    pointer-events: none;
+}
+
+body::after {
+    content: 'PAGE BREAK (A4)';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(20px + 297mm - 12px);
+    background: #ff0000;
+    color: white;
+    padding: 2px 10px;
+    font-size: 9px;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+@media print {
+    body::before,
+    body::after {
+        display: none !important;
+    }
+} 
+
 

@@ -1,7 +1,7 @@
 import './Layout2.css'
 import Data from '../data/Data.json'
 
-const Layout1 = () => {
+const Layout2 = () => {
   
 	const { image, sidebar, header, summary, employment, education } = Data;
 
@@ -9,20 +9,22 @@ const Layout1 = () => {
 		<div className='container'>
 
             {/* Header */}
-            <header className="header">
+            <header className="top-header">
                 
-                <div className="header-text">
-                    <h1>{header.name}</h1>
-                    <h3 className="job-title">{header.title}</h3>
-                    <p>{summary.content}</p>
-                    </div>				
-                <div className="profile-picture">
-					<img src={image.path} alt={image.alt} />
+                <div className="header-content">
+					<div className="header-text">
+						<h1>{header.name}</h1>
+						<h3 className="job-title">{header.title}</h3>
+						<p className="professional-summary">{summary.content}</p>
+					</div>				
+					<div className="header-picture">
+						<img src={image.path} alt={image.alt} />
+					</div>
 				</div>
 
             </header>
 
-			<main>
+			<div className="main-layout">
 			
                 {/* Sidebar */}
                 <aside className="sidebar">            
@@ -44,7 +46,7 @@ const Layout1 = () => {
                     ))}
                 </aside>
 
-                <div className="main-content">
+                <div className="content">
 
                     {/* Employment */}
                     <section className="main-section">
@@ -84,9 +86,9 @@ const Layout1 = () => {
 
                     </section>
                 </div>
-			</main>
+			</div>
 		</div>
 	)
 }
 
-export default Layout1
+export default Layout2
