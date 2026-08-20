@@ -1,4 +1,4 @@
-import './Layout1.css'
+import styles from './Layout1.module.css'
 import Data from '../data/Data.json'
 
 const Layout1 = () => {
@@ -6,20 +6,20 @@ const Layout1 = () => {
 	const { image, sidebar, header, summary, employment, education } = Data;
 
 	return (
-		<div className='container'>
+		<div className={styles.container}>
 			
 			{/* Sidebar */}
-			<aside className="sidebar">
+			<aside className={styles.sidebar}>
 		
 				{/* Profile Picture */}
-				<div className="profile-picture">
+				<div className={styles['profile-picture']}>
 					<img src={image.path} alt={image.alt} />
 				</div>
 
 				{/* Sidebar Sections */}
 				{sidebar.sections.map((section) => (
-					<section key={section.type} className={`sidebar-section ${section.type}`}>
-						<h3 className="sidebar-title">{section.title}</h3>
+					<section key={section.type} className={`${styles['sidebar-section']} ${section.type}`}>
+						<h3 className={styles['sidebar-title']}>{section.title}</h3>
 						{section.items.map((item, i) => (
 							<p key={i}>
 								<strong>{item.label}:</strong>{' '}
@@ -36,56 +36,56 @@ const Layout1 = () => {
 			<main>
 
 				{/* Header with Name */}
-				<header className="header">
+				<header className={styles.header}>
 
 					<h1>{header.name}</h1>
 
-					<h3 className="job-title">{header.title}</h3>
+					<h3 className={styles['job-title']}>{header.title}</h3>
 
-				</header>
+			</header>
 
-				{/* Professional Summary */}
-				<section className="main-section">
+		{/* Professional Summary */}
+		<section className={styles['main-section']}>
 
-					<h2 className="section-title">{summary.title}</h2>
+			<h2 className={styles['section-title']}>{summary.title}</h2>
 
-					<p>{summary.content}</p>
+			<p>{summary.content}</p>
 
-				</section>
+		</section>
 
-				{/* Employment */}
-				<section className="main-section">
+		{/* Employment */}
+		<section className={styles['main-section']}>
 
-					<h2 className="section-title">{employment.title}</h2>
-					{employment.jobs.map((item, i) => (
-						<article key={i} className="job-entry">
-							<div className="job-header">
-								<h3 className="job-title">{item.title}</h3>
-								<span className="job-date">{item.dates}</span>
-							</div>
-							<h4 className="company-name">{item.company}</h4>
-							<ul>
-								{item.accomplishments.map((item, i) => (
-									<li key={i}>{item}</li>
-								))}
-							</ul>
-						</article>
-					))}
-				
-				</section>
+			<h2 className={styles['section-title']}>{employment.title}</h2>
+			{employment.jobs.map((item, i) => (
+				<article key={i} className={styles['job-entry']}>
+					<div className={styles['job-header']}>
+						<h3 className={styles['job-title']}>{item.title}</h3>
+						<span className={styles['job-date']}>{item.dates}</span>
+					</div>
+					<h4 className={styles['company-name']}>{item.company}</h4>
+					<ul>
+						{item.accomplishments.map((item, i) => (
+							<li key={i}>{item}</li>
+						))}
+					</ul>
+				</article>
+			))}
+		
+		</section>
 				
 				{/* Education */}
-				<section className="main-section">
+				<section className={styles['main-section']}>
 
-					<h2 className="section-title">{education.title}</h2>
+					<h2 className={styles['section-title']}>{education.title}</h2>
 					
 					{education.degrees.map((item, i) => (
-						<article key={i} className="education-entry">
-							<div className="edu-header">
-								<h3 className="degree">{item.degree}</h3>
-								<span className="edu-date">{item.year}</span>
+						<article key={i} className={styles['education-entry']}>
+							<div className={styles['edu-header']}>
+								<h3 className={styles.degree}>{item.degree}</h3>
+								<span className={styles['edu-date']}>{item.year}</span>
 							</div>
-							<h4 className="school-name">{item.institution}</h4>
+							<h4 className={styles['school-name']}>{item.institution}</h4>
 						</article>
 					))}
 
