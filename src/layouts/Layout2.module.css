@@ -79,26 +79,6 @@
     width: 100%;
 }
 
-@media print {
-    body {
-        background: white;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .container {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        box-shadow: none;
-        page-break-after: always;
-    }
-    
-    .top-header,
-    .main-layout {
-        break-inside: avoid;
-    }
-}
 
 /* ================================
    SIDEBAR STYLES

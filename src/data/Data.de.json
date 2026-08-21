@@ -5,7 +5,7 @@
     },
     "summary": {
         "title": "BERUFLICHES PROFIL",
-        "content": "Erfahrener Softwareentwickler mit aussergewöhnlich ausgeprägten analytischen und kommunikativen Fähigkeiten. Spezialisiert auf die Entwicklung von Full-Stack-Anwendungen und KI-basierten Softwarelösungen."
+        "content": "Erfahrener Softwareentwickler mit stark ausgeprägten analytischen und kommunikativen Fähigkeiten. Spezialisiert auf die Entwicklung von Full-Stack-Anwendungen und KI-basierten Softwarelösungen."
     },
     "image": {
         "path": "./images/selfie_colored.jpeg",
@@ -71,7 +71,7 @@
                 "company": "CourseStorm, Inc.",
                 "accomplishments": [
                     "Etablierung der ersten QA-Prozesse und Teststandards als alleiniger QA-Ingenieur des Unternehmens.",
-                    "Aufbau einer automatisierten End-to-End-Testsuite mit Laravel Dusk (PHP) zur Reduzierung von Regressionsfehler.",
+                    "Aufbau einer automatisierten End-to-End-Testsuite mit Laravel Dusk (PHP) zur Reduzierung von Regressionsfehlern.",
                     "Validierung von REST-APIs und Backend-Logik mit Postman und direkten Datenbankabfragen.",
                     "Zusammenarbeit mit Entwicklungs- und Produktteams zur Definition von Akzeptanzkriterien in agilen Sprint-Zyklen.",
                     "Ursachenanalyse komplexer Produktionsprobleme zur Vermeidung erneuter Ausfälle."
@@ -82,7 +82,7 @@
                 "dates": "2015-2020",
                 "company": "Universität Bern | Migros Klubschule | The Hill School",
                 "accomplishments": [
-                    "Unterrichtete Philosophie und Englisch an verschiedenen Institutionen in der Schweiz und den USA."
+                    "Lehrtätigkeit in Philosophie und Englisch an verschiedenen Institutionen in der Schweiz und den USA."
                 ]
             }
         ]

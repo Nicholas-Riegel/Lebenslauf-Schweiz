@@ -1,15 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from './Layout1.module.css'
-import Data from '../data/Data.json'
 
-const Layout1 = () => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Layout1 = ({ data }: { data: any }) => {
   
-	const { image, sidebar, header, summary, employment, education } = Data;
+	const { image, sidebar, header, summary, employment, education } = data;
 
 	return (
-		<div className={styles.container}>
+		<div className={styles['container']}>
 			
 			{/* Sidebar */}
-			<aside className={styles.sidebar}>
+			<aside className={styles['sidebar']}>
 		
 				{/* Profile Picture */}
 				<div className={styles['profile-picture']}>
@@ -17,10 +18,10 @@ const Layout1 = () => {
 				</div>
 
 				{/* Sidebar Sections */}
-				{sidebar.sections.map((section) => (
-					<section key={section.type} className={`${styles['sidebar-section']} ${section.type}`}>
+				{sidebar.sections.map((section: any) => (
+				<section key={section.type} className={`${styles['sidebar-section']} ${styles[section.type]}`}>
 						<h3 className={styles['sidebar-title']}>{section.title}</h3>
-						{section.items.map((item, i) => (
+						{section.items.map((item: any, i: number) => (
 							<p key={i}>
 								<strong>{item.label}:</strong>{' '}
 								{item.url
@@ -36,7 +37,7 @@ const Layout1 = () => {
 			<main>
 
 				{/* Header with Name */}
-				<header className={styles.header}>
+				<header className={styles['header']}>
 
 					<h1>{header.name}</h1>
 
@@ -57,7 +58,7 @@ const Layout1 = () => {
 		<section className={styles['main-section']}>
 
 			<h2 className={styles['section-title']}>{employment.title}</h2>
-			{employment.jobs.map((item, i) => (
+			{employment.jobs.map((item: any, i: number) => (
 				<article key={i} className={styles['job-entry']}>
 					<div className={styles['job-header']}>
 						<h3 className={styles['job-title']}>{item.title}</h3>
@@ -65,7 +66,7 @@ const Layout1 = () => {
 					</div>
 					<h4 className={styles['company-name']}>{item.company}</h4>
 					<ul>
-						{item.accomplishments.map((item, i) => (
+						{item.accomplishments.map((item: any, i: number) => (
 							<li key={i}>{item}</li>
 						))}
 					</ul>
@@ -79,7 +80,7 @@ const Layout1 = () => {
 
 					<h2 className={styles['section-title']}>{education.title}</h2>
 					
-					{education.degrees.map((item, i) => (
+					{education.degrees.map((item: any, i: number) => (
 						<article key={i} className={styles['education-entry']}>
 							<div className={styles['edu-header']}>
 								<h3 className={styles.degree}>{item.degree}</h3>

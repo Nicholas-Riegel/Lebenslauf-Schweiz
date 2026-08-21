@@ -1,10 +1,10 @@
 /* ================================
-   FLOATING LAYOUT SELECTOR
-   Fixed position in upper right, doesn't interfere with layout
+   FLOATING SELECTORS
+   Fixed position in upper right, vertically stacked
    ================================ */
+.language-selector,
 .layout-selector {
     position: fixed;
-    top: 20px;
     right: 20px;
     z-index: 1000;
     background: white;
@@ -17,6 +17,15 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+.language-selector {
+    top: 20px;
+}
+
+.layout-selector {
+    top: 75px;
+}
+
+.language-selector label,
 .layout-selector label {
     font-size: 14px;
     font-weight: 500;
@@ -25,6 +34,7 @@
     white-space: nowrap;
 }
 
+.language-selector select,
 .layout-selector select {
     padding: 6px 10px;
     font-size: 13px;
@@ -35,10 +45,12 @@
     transition: border-color 0.2s;
 }
 
+.language-selector select:hover,
 .layout-selector select:hover {
     border-color: #999;
 }
 
+.language-selector select:focus,
 .layout-selector select:focus {
     outline: none;
     border-color: #0066cc;
@@ -47,6 +59,7 @@
 
 /* Hide on print */
 @media print {
+    .language-selector,
     .layout-selector {
         display: none !important;
     }

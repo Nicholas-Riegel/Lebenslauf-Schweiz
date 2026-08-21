@@ -1,0 +1,101 @@
+{
+    "header": {
+        "name": "Nicholas P. Riegel",
+        "title": "Développeur logiciel"
+    },
+
+    "summary": {
+        "title": "PROFIL PROFESSIONNEL",
+        "content": "Développeur logiciel expérimenté doté de solides capacités d’analyse et de communication. Spécialisé dans le développement d’applications full-stack et de solutions logicielles basées sur l’intelligence artificielle."
+    },
+    "image": {
+        "path": "./images/selfie_colored.jpeg",
+        "alt": "Profile Picture"
+    },
+    "sidebar": {
+        "sections": [
+            {
+                "title": "Contact",
+                "type": "contacts",
+                "items": [
+                    { "label": "Email", "value": "nicholaspriegel@gmail.com" },
+                    { "label": "Localisation", "value": "Berne, Suisse" },
+                    { "label": "Nationalité", "value": "Suisse" },
+                    { "label": "LinkedIn", "value": "/in/nicholas-riegel", "url": "https://www.linkedin.com/in/nicholas-riegel" }
+                ]
+            },
+            {
+                "title": "Compétences",
+                "type": "skills",
+                "items": [
+                    { "label": "Langages de programmation", "value": "Java, C#, Python, JavaScript, TypeScript" },
+                    { "label": "Frameworks & plateformes", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
+                    { "label": "Bases de données", "value": "PostgreSQL, MySQL, MongoDB" },
+                    { "label": "AI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG" },
+                    { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium" },
+                    { "label": "Technologies web", "value": "HTML5, CSS3, Tailwind CSS" },
+                    { "label": "Outils & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira" },
+                    { "label": "Méthodes", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST APIs, MVC, TDD" }
+                ]
+            },
+            {
+                "title": "Langues",
+                "type": "languages",
+                "items": [
+                    { "label": "Anglais", "value": "Courant" },
+                    { "label": "Allemand", "value": "B2 – actuellement en cours C1" },
+                    { "label": "Français", "value": "C1" }
+                ]
+            }
+        ]
+    },
+    "employment": {
+        "title": "Parcours professionnel",
+        "jobs": [
+            {
+                "title": "Développeur logiciel",
+                "dates": "2024 – 2026",
+                "company": "B.E. Moore, LLC",
+                "accomplishments": [
+                    "Développement d’outils de collaboration basés sur l’IA pour intégrer les LLM dans les flux de travail de productivité, améliorer l’efficacité des équipes et automatiser les tâches répétitives.",
+                    "Développement d’une plateforme de chat basée sur l’IA avec Python, FastAPI, PostgreSQL et React.",
+                    "Développement d’un système d’automatisation des e-mails basé sur l’IA pour analyser, catégoriser et répondre aux messages entrants.",
+                    "Création d’une extension de navigateur permettant d’intégrer des fonctionnalités LLM dans les flux de travail web.",
+                    "Conception d’API backend pour des pipelines d’interaction avec l’IA à l’aide de FastAPI et SQLAlchemy.",
+                    "Intégration de modèles d’IA générative via les API d’OpenAI et de DeepSeek.",
+                    "Conteneurisation des services avec Docker pour un déploiement évolutif."
+                ]
+            },
+            {
+                "title": "Ingénieur QA logiciel",
+                "dates": "2021–2024",
+                "company": "CourseStorm, Inc.",
+                "accomplishments": [
+                    "Mise en place des premiers processus QA et standards de test de l’entreprise en tant qu’unique ingénieur QA.",
+                    "Développement d’une suite de tests automatisés end-to-end avec Laravel Dusk (PHP) afin de réduire les régressions.",
+                    "Validation des API REST et de la logique backend avec Postman et des requêtes directes à la base de données.",
+                    "Collaboration avec les équipes de développement et de produit pour définir les critères d’acceptation dans le cadre de cycles de sprint agiles.",
+                    "Analyse des causes profondes de problèmes complexes en production afin d’éviter la récurrence des incidents."
+                ]
+            },
+            {
+                "title": "Enseignant",
+                "dates": "2015–2020",
+                "company": "Université de Berne | Migros Klubschule | The Hill School",
+                "accomplishments": [
+                    "Enseignement de la philosophie et de l’anglais dans différentes institutions en Suisse et aux États-Unis."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Formation",
+        "degrees": [
+            {
+                "degree": "Doctorat en philosophie (Ph. D.)",
+                "year": "2010",
+                "institution": "Université de Toronto, Toronto, Canada"
+            }
+        ]
+    }
+}
