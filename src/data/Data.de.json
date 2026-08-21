@@ -17,33 +17,33 @@
                 "title": "Kontakt",
                 "type": "contacts",
                 "items": [
-                { "label": "Email", "value": "nicholaspriegel@gmail.com" },
-                { "label": "Lokation", "value": "Bern, Schweiz" },
-                { "label": "Staatsbürgerschaft", "value": "Schweiz" },
-                { "label": "LinkedIn", "value": "/in/nicholas-riegel", "url": "https://www.linkedin.com/in/nicholas-riegel" }
+                    { "label": "Email", "value": "nicholaspriegel@gmail.com" },
+                    { "label": "Lokation", "value": "Bern, Schweiz" },
+                    { "label": "Staatsbürgerschaft", "value": "Schweiz" },
+                    { "label": "LinkedIn", "value": "/in/nicholas-riegel", "url": "https://www.linkedin.com/in/nicholas-riegel" }
                 ]
             },
             {
                 "title": "Fähigkeiten",
                 "type": "skills",
                 "items": [
-                { "label": "Programmiersprachen", "value": "Java, C#, Python, JavaScript, TypeScript" },
-                { "label": "Frameworks & Plattformen", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
-                { "label": "Datenbanken", "value": "PostgreSQL, MySQL, MongoDB" },
-                { "label": "AI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
-                { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium"},
-                { "label": "Webtechnologien", "value": "HTML5, CSS3, Tailwind CSS"},
-                { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira"},
-                { "label": "Methoden", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST-APIs, MVC, TDD"}
+                    { "label": "Programmiersprachen", "value": "Java, C#, Python, JavaScript, TypeScript" },
+                    { "label": "Frameworks & Plattformen", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
+                    { "label": "Datenbanken", "value": "PostgreSQL, MySQL, MongoDB" },
+                    { "label": "AI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
+                    { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium"},
+                    { "label": "Webtechnologien", "value": "HTML5, CSS3, Tailwind CSS"},
+                    { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira"},
+                    { "label": "Methoden", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST-APIs, MVC, TDD"}
                 ]
             },
             {
                 "title": "Sprachen",
                 "type": "languages",
                 "items": [
-                { "label": "Englisch", "value": "Fliessend" },
-                { "label": "Deutsch", "value": "B2 – aktuell im C1-Kurs" },
-                { "label": "Französisch", "value": "C1" }
+                    { "label": "Deutsch", "value": "B2 – aktuell im C1-Kurs" },
+                    { "label": "Französisch", "value": "C1" },
+                    { "label": "Englisch", "value": "Fliessend" }
                 ]
             }
         ]
@@ -89,7 +89,7 @@
     },
     "education": {
         "title": "Ausbildung",
-        "degrees": [
+        "items": [
             {
                 "degree": "Promotion in Philosophie (Dr. phil.)",
                 "year": "2010",

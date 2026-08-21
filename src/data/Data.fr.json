@@ -42,9 +42,9 @@
                 "title": "Langues",
                 "type": "languages",
                 "items": [
-                    { "label": "Anglais", "value": "Courant" },
+                    { "label": "Français", "value": "C1" },
                     { "label": "Allemand", "value": "B2 – actuellement en cours C1" },
-                    { "label": "Français", "value": "C1" }
+                    { "label": "Anglais", "value": "Courant" }
                 ]
             }
         ]
@@ -90,7 +90,7 @@
     },
     "education": {
         "title": "Formation",
-        "degrees": [
+        "items": [
             {
                 "degree": "Doctorat en philosophie (Ph. D.)",
                 "year": "2010",
