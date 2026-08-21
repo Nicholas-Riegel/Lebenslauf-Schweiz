@@ -7,20 +7,20 @@ import DataFR from './data/Data.fr.json'
 
 function App() {
 
-	const [selectedLayout, setSelectedLayout] = useState(localStorage.getItem('selectedLayout') || '1');
-	const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'de');
-	const data = selectedLanguage === 'fr' ? DataFR : DataDE;
+	const [layout, setLayout] = useState(localStorage.getItem('layout') || '1');
+	const [language, setLanguage] = useState(localStorage.getItem('language') || 'de');
+	const data = language === 'fr' ? DataFR : DataDE;
 
 	const handleLayoutChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		const newLayout = e.target.value
-		setSelectedLayout(newLayout)
-		localStorage.setItem('selectedLayout', newLayout)
+		setLayout(newLayout)
+		localStorage.setItem('layout', newLayout)
 	}
 	
 	const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		const newLanguage = e.target.value
-		setSelectedLanguage(newLanguage)
-		localStorage.setItem('selectedLanguage', newLanguage)
+		setLanguage(newLanguage)
+		localStorage.setItem('language', newLanguage)
 	}
 
 	return (
@@ -30,7 +30,7 @@ function App() {
 				<label htmlFor="language-select">Language:</label>
 				<select
 					id="language-select"
-					value={selectedLanguage}
+					value={language}
 					onChange={handleLanguageChange}>
 					<option value="de">Deutsch</option>
 					<option value="fr">Francais</option>
@@ -42,7 +42,7 @@ function App() {
 				<label htmlFor="layout-select">Layout:</label>
 				<select
 					id="layout-select"
-					value={selectedLayout}
+					value={layout}
 					onChange={handleLayoutChange}>
 					<option value="1">Layout 1</option>
 					<option value="2">Layout 2</option>
@@ -50,7 +50,7 @@ function App() {
 			</div>
 
 			{/* Layout */}
-			{selectedLayout === '1' 
+			{layout === '1' 
 				? <Layout1 data={data} /> 
 				: <Layout2 data={data} />}
 		</>
