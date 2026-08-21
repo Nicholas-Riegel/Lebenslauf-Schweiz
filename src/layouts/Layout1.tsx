@@ -52,7 +52,7 @@ const Layout1 = ({ data }: { data: any }) => {
 				{/* Employment */}
 				<section className={styles['main-section']}>
 					<h2 className={styles['section-title']}>{employment.title}</h2>
-					{employment.jobs.map((item: any, i: number) => (
+					{employment.items.map((item: any, i: number) => (
 					<article key={i} className={styles['job-entry']}>
 						<div className={styles['job-header']}>
 							<h3 className={styles['job-title']}>{item.title}</h3>

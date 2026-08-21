@@ -51,7 +51,7 @@
     },
     "employment": {
         "title": "Parcours professionnel",
-        "jobs": [
+        "items": [
             {
                 "title": "Développeur logiciel",
                 "dates": "2024 – 2026",

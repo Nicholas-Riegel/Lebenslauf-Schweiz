@@ -50,7 +50,7 @@
     },
     "employment": {
         "title": "Berufliche Laufbahn",
-        "jobs": [
+        "items": [
             {
                 "title": "Softwareentwickler",
                 "dates": "2024 – 2026",
