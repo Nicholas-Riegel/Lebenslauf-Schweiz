@@ -23,6 +23,18 @@ function App() {
 		localStorage.setItem('language', newLanguage)
 	}
 
+	const renderLayout = () => {
+
+		switch (layout) {
+			case '1':
+				return <Layout1 data={data} />
+			case '2':
+				return <Layout2 data={data} />
+			default:
+				return <Layout1 data={data} />
+		}
+	}
+	
 	return (
 		<>
 			{/* Floating Language Selector */}
@@ -50,9 +62,7 @@ function App() {
 			</div>
 
 			{/* Layout */}
-			{layout === '1' 
-				? <Layout1 data={data} /> 
-				: <Layout2 data={data} />}
+			{renderLayout()}
 		</>
 	)
 }
