@@ -1,0 +1,100 @@
+{
+    "header": {
+        "name": "Nicholas P. Riegel",
+        "title": "Software Developer"
+    },
+    "summary": {
+        "title": "PROFESSIONAL PROFILE",
+        "content": "Experienced software developer with strong analytical and communication skills. Specialized in developing full-stack applications and AI-based software solutions."
+    },
+    "image": {
+        "path": "./images/selfie_colored.jpeg",
+        "alt": "Profile Picture"
+    },
+    "sidebar": {
+        "sections": [
+            {
+                "title": "Contact",
+                "type": "contacts",
+                "items": [
+                    { "label": "Email", "value": "nicholaspriegel@gmail.com" },
+                    { "label": "Location", "value": "Bern, Switzerland" },
+                    { "label": "Nationality", "value": "Switzerland" },
+                    { "label": "LinkedIn", "value": "/in/nicholas-riegel", "url": "https://www.linkedin.com/in/nicholas-riegel" }
+                ]
+            },
+            {
+                "title": "Skills",
+                "type": "skills",
+                "items": [
+                    { "label": "Programming Languages", "value": "Java, C#, Python, JavaScript, TypeScript" },
+                    { "label": "Frameworks & Platforms", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
+                    { "label": "Databases", "value": "PostgreSQL, MySQL, MongoDB" },
+                    { "label": "AI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
+                    { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium"},
+                    { "label": "Web Technologies", "value": "HTML5, CSS3, Tailwind CSS"},
+                    { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira"},
+                    { "label": "Methodologies", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST APIs, MVC, TDD"}
+                ]
+            },
+            {
+                "title": "Languages",
+                "type": "languages",
+                "items": [
+                    { "label": "English", "value": "Fluent" },
+                    { "label": "French", "value": "C1" },
+                    { "label": "German", "value": "B2 – currently taking C1 course" }
+                ]
+            }
+        ]
+    },
+    "employment": {
+        "title": "Professional Experience",
+        "items": [
+            {
+                "title": "Software Developer",
+                "dates": "2024 – 2026",
+                "company": "B.E. Moore, LLC",
+                "accomplishments": [
+                    "Developed AI-powered collaboration tools to integrate LLMs into productivity workflows, improving team efficiency and automating repetitive tasks.",
+                    "Built an AI-powered chat platform using Python, FastAPI, PostgreSQL, and React.",
+                    "Developed an AI-powered email automation system to analyze, categorize, and respond to incoming messages.",
+                    "Created a browser extension to integrate LLM functionality into web workflows.",
+                    "Designed backend APIs for AI interaction pipelines using FastAPI and SQLAlchemy.",
+                    "Integrated generative AI models via OpenAI and DeepSeek APIs.",
+                    "Containerized services with Docker for scalable deployment."
+                ]
+            },
+            {
+                "title": "Software QA Engineer",
+                "dates": "2021–2024",
+                "company": "CourseStorm, Inc.",
+                "accomplishments": [
+                    "Established the company's first QA processes and testing standards as sole QA engineer.",
+                    "Built an automated end-to-end test suite using Laravel Dusk (PHP) to reduce regression bugs.",
+                    "Validated REST APIs and backend logic using Postman and direct database queries.",
+                    "Collaborated with development and product teams to define acceptance criteria in agile sprint cycles.",
+                    "Performed root cause analysis of complex production issues to prevent recurrence."
+                ]
+            },
+            {
+                "title": "Lecturer",
+                "dates": "2015-2020",
+                "company": "University of Bern | Migros Klubschule | The Hill School",
+                "accomplishments": [
+                    "Taught philosophy and English at various institutions in Switzerland and the United States."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Education",
+        "items": [
+            {
+                "degree": "Doctor of Philosophy (Ph.D.)",
+                "year": "2010",
+                "institution": "University of Toronto, Toronto, Canada"
+            }
+        ]
+    }
+}

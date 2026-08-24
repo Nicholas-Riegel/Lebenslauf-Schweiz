@@ -4,12 +4,27 @@ import Layout1 from './layouts/Layout1'
 import Layout2 from './layouts/Layout2'
 import DataDE from './data/Data.de.json'
 import DataFR from './data/Data.fr.json'
+import DataEN from './data/Data.en.json'
 
 function App() {
 
 	const [layout, setLayout] = useState(localStorage.getItem('layout') || '1');
 	const [language, setLanguage] = useState(localStorage.getItem('language') || 'de');
-	const data = language === 'fr' ? DataFR : DataDE;
+
+	const selectLanguage = () => {
+		switch (language) {
+			case 'de':
+				return DataDE;
+			case 'fr':
+				return DataFR;
+			case 'en':
+				return DataEN;
+			default:
+				return DataDE;
+		}
+	}
+
+	const data = selectLanguage();
 
 	const handleLayoutChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		const newLayout = e.target.value
@@ -24,20 +39,19 @@ function App() {
 	}
 
 	const renderLayout = () => {
-
 		switch (layout) {
 			case '1':
-				return <Layout1 data={data} />
+				return <Layout1 data={data} />;
 			case '2':
-				return <Layout2 data={data} />
+				return <Layout2 data={data} />;
 			default:
-				return <Layout1 data={data} />
+				return <Layout1 data={data} />;
 		}
 	}
 	
 	return (
 		<>
-			{/* Floating Language Selector */}
+			{/* Language Selector */}
 			<div className="language-selector">
 				<label htmlFor="language-select">Language:</label>
 				<select
@@ -45,11 +59,12 @@ function App() {
 					value={language}
 					onChange={handleLanguageChange}>
 					<option value="de">Deutsch</option>
-					<option value="fr">Francais</option>
+					<option value="fr">Français</option>
+					<option value="en">English</option>
 				</select>
 			</div>
 			
-			{/* Floating Layout Selector */}
+			{/* Layout Selector */}
 			<div className="layout-selector">
 				<label htmlFor="layout-select">Layout:</label>
 				<select
