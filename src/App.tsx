@@ -8,11 +8,11 @@ import DataEN from './data/Data.en.json'
 
 function App() {
 
-	const [layout, setLayout] = useState(localStorage.getItem('layout') || '1');
-	const [language, setLanguage] = useState(localStorage.getItem('language') || 'de');
+	const [selectedLayout, setSelectedLayout] = useState(localStorage.getItem('selectedLayout') || '1');
+	const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'de');
 
-	const selectLanguage = () => {
-		switch (language) {
+	const returnData = (arg: string) => {
+		switch (arg) {
 			case 'de':
 				return DataDE;
 			case 'fr':
@@ -24,22 +24,22 @@ function App() {
 		}
 	}
 
-	const data = selectLanguage();
+	const data = returnData(selectedLanguage);
 
 	const handleLayoutChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		const newLayout = e.target.value
-		setLayout(newLayout)
-		localStorage.setItem('layout', newLayout)
+		setSelectedLayout(newLayout)
+		localStorage.setItem('selectedLayout', newLayout)
 	}
 	
 	const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		const newLanguage = e.target.value
-		setLanguage(newLanguage)
-		localStorage.setItem('language', newLanguage)
+		setSelectedLanguage(newLanguage)
+		localStorage.setItem('selectedLanguage', newLanguage)
 	}
 
-	const renderLayout = () => {
-		switch (layout) {
+	const returnLayout = (arg: string) => {
+		switch (arg) {
 			case '1':
 				return <Layout1 data={data} />;
 			case '2':
@@ -56,7 +56,7 @@ function App() {
 				<label htmlFor="language-select">Language:</label>
 				<select
 					id="language-select"
-					value={language}
+					value={selectedLanguage}
 					onChange={handleLanguageChange}>
 					<option value="de">Deutsch</option>
 					<option value="fr">Français</option>
@@ -69,7 +69,7 @@ function App() {
 				<label htmlFor="layout-select">Layout:</label>
 				<select
 					id="layout-select"
-					value={layout}
+					value={selectedLayout}
 					onChange={handleLayoutChange}>
 					<option value="1">Layout 1</option>
 					<option value="2">Layout 2</option>
@@ -77,7 +77,7 @@ function App() {
 			</div>
 
 			{/* Layout */}
-			{renderLayout()}
+			{returnLayout(selectedLayout)}
 		</>
 	)
 }
