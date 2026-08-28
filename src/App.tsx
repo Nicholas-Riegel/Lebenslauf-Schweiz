@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import Layout1 from './layouts/Layout1'
 import Layout2 from './layouts/Layout2'
-import DataDE from './data/Data.de.json'
-import DataFR from './data/Data.fr.json'
-import DataEN from './data/Data.en.json'
+import DataDE from './data/de.json'
+import DataFR from './data/fr.json'
+import DataEN from './data/en.json'
 
 function App() {
 
