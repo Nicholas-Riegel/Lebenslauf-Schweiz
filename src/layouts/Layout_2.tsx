@@ -1,6 +1,6 @@
 // disabling no-explicit-any because nested json more trouble than worth for this app
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import styles from './Layout2.module.css'
+import styles from './Layout_2.module.css'
 
 const Layout2 = ({data}: {data: any}) => {
   

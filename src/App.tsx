@@ -1,26 +1,27 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
 import './App.css'
-import Layout1 from './layouts/Layout1'
-import Layout2 from './layouts/Layout2'
-import DataDE from './data/de.json'
-import DataFR from './data/fr.json'
-import DataEN from './data/en.json'
+import Layout_1 from './layouts/Layout_1'
+import Layout_2 from './layouts/Layout_2'
+import data_de from './data/de.json'
+import data_fr from './data/fr.json'
+import data_en from './data/en.json'
 
 function App() {
 
 	const [selectedLayout, setSelectedLayout] = useState(localStorage.getItem('selectedLayout') || '1');
 	const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'de');
 
-	const returnData = (arg: string) => {
-		switch (arg) {
+	const returnData = (_language: string) => {
+		switch (_language) {
 			case 'de':
-				return DataDE;
+				return data_de;
 			case 'fr':
-				return DataFR;
+				return data_fr;
 			case 'en':
-				return DataEN;
+				return data_en;
 			default:
-				return DataDE;
+				return data_de;
 		}
 	}
 
@@ -38,14 +39,14 @@ function App() {
 		localStorage.setItem('selectedLanguage', newLanguage)
 	}
 
-	const returnLayout = (arg: string) => {
-		switch (arg) {
+	const returnLayout = (_layout: string, _data: any) => {
+		switch (_layout) {
 			case '1':
-				return <Layout1 data={data} />;
+				return <Layout_1 data={_data} />;
 			case '2':
-				return <Layout2 data={data} />;
+				return <Layout_2 data={_data} />;
 			default:
-				return <Layout1 data={data} />;
+				return <Layout_1 data={_data} />;
 		}
 	}
 	
@@ -77,7 +78,7 @@ function App() {
 			</div>
 
 			{/* Layout */}
-			{returnLayout(selectedLayout)}
+			{returnLayout(selectedLayout, data)}
 		</>
 	)
 }
