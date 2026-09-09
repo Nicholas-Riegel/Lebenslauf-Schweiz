@@ -4,7 +4,7 @@ import styles from './Layout_1.module.css'
 
 const Layout1 = ({ data }: { data: any }) => {
   
-	const { image, sidebar, header, summary, employment, education } = data;
+	const { image, sidebar, header, summary, skills, employment, education } = data;
 
 	return (
 		<div className={styles['container']}>
@@ -40,13 +40,22 @@ const Layout1 = ({ data }: { data: any }) => {
 				{/* Header with Name */}
 				<header className={styles['header']}>
 					<h1>{header.name}</h1>
-					<h3 className={styles['job-title']}>{header.title}</h3>
 				</header>
 
 				{/* Professional Summary */}
 				<section className={styles['main-section']}>
-					<h2 className={styles['section-title']}>{summary.title}</h2>
 					<p>{summary.content}</p>
+				</section>
+
+				{/* Skills */}
+				<section className={styles['main-section']}>
+					<h2 className={styles['section-title']}>{skills.title}</h2>
+					{skills.items.map((item: any, i: number) => (
+						<div key={i} className={styles['skill-entry']}>
+								<h3 className={styles['skill-type']}>{item.label}</h3>
+								<p className={styles['skill-list']}>{item.value}</p>
+						</div>
+					))}
 				</section>
 
 				{/* Employment */}

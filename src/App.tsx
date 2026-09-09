@@ -3,9 +3,9 @@ import { useState } from 'react'
 import './App.css'
 import Layout_1 from './layouts/Layout_1'
 import Layout_2 from './layouts/Layout_2'
-import data_de from './data/de.json'
-import data_fr from './data/fr.json'
-import data_en from './data/en.json'
+import data_de from './data/de_2.json'
+import data_fr from './data/fr_1.json'
+import data_en from './data/en_1.json'
 
 function App() {
 
