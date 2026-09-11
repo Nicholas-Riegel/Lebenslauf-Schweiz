@@ -1,46 +1,53 @@
 {
     "header": {
-        "name": "Nicholas P. Riegel",
+        "name": "Nicholas Riegel",
         "title": "Softwareentwickler"
     },
     "summary": {
         "title": "BERUFLICHES PROFIL",
-        "content": "Software Engineer mit Erfahrung in Full-Stack-Entwicklung und KI-gestützten Anwendungen. Fundierte Kenntnisse in Python, JavaScript/TypeScript, React, FastAPI und REST APIs. Erfahrung mit Software Testing, Datenbanken, Docker und agiler Entwicklung."
+        "items": [
+            "Software Engineer mit Erfahrung in Full-Stack-Entwicklung und KI-gestützten Anwendungen.",
+            "Fundierte Kenntnisse in Python, JavaScript/TypeScript, React, FastAPI und REST APIs.", 
+            "Erfahrung mit Software Testing, Datenbanken, Docker und agiler Entwicklung."
+        ]
     },
     "image": {
         "path": "./images/profile_pic_polo.jpg",
         "alt": "Profile Picture"
     },
-    "sidebar": {
-        "sections": [
-            {
-                "title": "Kontakt",
-                "type": "contacts",
-                "items": [
-                    { "label": "Email", "value": "nicholaspriegel@gmail.com" },
-                    { "label": "Lokation", "value": "Bern, Schweiz" },
-                    { "label": "Staatsbürgerschaft", "value": "Schweiz" },
-                    { "label": "LinkedIn", "value": "/in/nicholas-riegel", "url": "https://www.linkedin.com/in/nicholas-riegel" }
-                ]
-            },
-            {
-                "title": "Sprachen",
-                "type": "languages",
-                "items": [
-                    { "label": "Deutsch", "value": "B2 – aktuell im C1-Kurs" },
-                    { "label": "Französisch", "value": "C1" },
-                    { "label": "Englisch", "value": "Fliessend" }
-                ]
-            }
+    "personal_data": {
+        "title": "Persönliche Daten",
+        "type": "personliche_data",
+        "items": [
+            { "label": "Nationalität", "value": "CH, USA" },
+            { "label": "Heimatort", "value": "Corcelles-Cormondrèche (NE)" }
+        ]
+    },
+    "contact": {
+        "title": "Kontakt",
+        "type": "contacts",
+        "email": "nicholaspriegel@gmail.com",
+        "location": "Bern, Schweiz",
+        "phone": "+41 77 469 5519",
+        "linkedIn": "/in/nicholas-riegel", 
+        "linkedInUrl": "https://www.linkedin.com/in/nicholas-riegel"
+    },
+    "languages": {
+        "title": "Sprachen",
+        "type": "languages",
+        "items": [
+            { "label": "Deutsch", "value": "B2 – aktuell im C1-Kurs" },
+            { "label": "Französisch", "value": "Fliessend" },
+            { "label": "Englisch", "value": "Muttersprache" }
         ]
     },
     "skills": {
-        "title": "Fähigkeiten",
+        "title": "IT Kenntnisse",
         "items": [
-            { "label": "Programmiersprachen", "value": "Java, C#, Python, JavaScript, TypeScript" },
+            { "label": "Programmiersprachen", "value": "Java, C#, TypeScript, Python" },
             { "label": "Frameworks & Plattformen", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
             { "label": "Datenbanken", "value": "PostgreSQL, MySQL, MongoDB" },
-            { "label": "AI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
+            { "label": "KI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
             { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium"},
             { "label": "Webtechnologien", "value": "HTML5, CSS3, Tailwind CSS"},
             { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira"},
@@ -48,7 +55,7 @@
         ]
     },
     "employment": {
-        "title": "Berufliche Laufbahn",
+        "title": "Berufliche Erfahrung",
         "items": [
             {
                 "title": "Softwareentwickler",
@@ -87,10 +94,24 @@
         ]
     },
     "education": {
-        "title": "Ausbildung",
+        "title": "Aus- und Weiterbildung",
         "items": [
             {
-                "degree": "Promotion in Philosophie (Dr. phil.)",
+                "degree_course": "Deutschkurs C1",
+                "year": "laufend",
+                "institution": "Privatunterricht, Bern"
+            },
+            {
+                "degree_course": "Data Structures & Algorithms",
+                "year": "laufend",
+                "description": [
+                    "Datenstrukturen, Big-O-Notation, Rekursion und Algorithmen",
+                    "Sortier- und Suchalgorithmen, Linked Lists, Trees und Graphen",
+                    "Grundlagen der dynamischen Programmierung"
+                ]
+            },
+            {
+                "degree_course": "Promotion in Philosophie (Dr. phil.)",
                 "year": "2010",
                 "institution": "University of Toronto, Toronto, Kanada"
             }

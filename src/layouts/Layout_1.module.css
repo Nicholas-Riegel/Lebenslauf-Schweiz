@@ -3,16 +3,12 @@
     width: 210mm;
     min-height: 297mm;
     margin: 20px auto;
-    padding: 0 40px 0 0;;
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: visible;
     page-break-after: always;
 }
 
-/* ================================
-   SIDEBAR STYLES
-   ================================ */
 .sidebar {
     width: 40%;
     background-color: #85a4dd6d;  /* Change this to your desired color */
@@ -38,66 +34,51 @@
     object-fit: cover;
 }
 
-/* Sidebar Sections */
 .sidebar-section {
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 15px;    
 }
 
 .sidebar-title {
     font-weight: 700;
-    text-transform: uppercase;
-    /* color: #333; */
     margin-bottom: 12px;
     padding-bottom: 8px;
     border-bottom: 2px solid #666;
 }
 
-/* Contact Items */
 .contacts p {
     margin-bottom: 10px;
 }
 
-/* Skills */
 .skills p {
     margin-bottom: 15px;
 }
 
-/* Languages */
 .languages p {
     margin-bottom: 8px;
 }
 
-/* ================================
-   MAIN CONTENT STYLES
-   ================================ */
 main {
     width: 70%;
-    padding: 30px 25px;
+    padding: 120px 40px 30px 40px;
     overflow: visible;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 
-/* Header */
 .header {
+    text-align: center;
     padding-bottom: 12px;
 }
 
-.header h1 {
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 4px;
+.summary {
+    padding-left: 40px;
 }
 
-.header .job-title {
-    color: #666;
-    font-weight: 500;
-}
-
-/* Section Titles */
 .section-title {
     font-weight: 700;
-    text-transform: uppercase;
+    text-align: center;
     color: #333;
     margin-top: 18px;
     margin-bottom: 12px;
@@ -105,7 +86,10 @@ main {
     border-bottom: 1px solid #999;
 }
 
-/* Job Entry */
+.skill-list {
+    padding-left: 40px;
+}
+
 .job-entry {
     margin-bottom: 14px;
 }
@@ -141,7 +125,6 @@ main {
     margin-bottom: 6px;
 }
 
-/* Education Entry */
 .education-entry {
     margin-bottom: 12px;
 }
@@ -157,6 +140,10 @@ main {
     font-weight: 700;
     color: #222;
     margin: 0;
+}
+
+.education-entry ul {
+    padding-left: 40px;
 }
 
 .edu-date {
@@ -179,26 +166,6 @@ main {
 }
 
 /* ================================
-   PRINT OPTIMIZATION
-   ================================ */
-@media print {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .container {
-        box-shadow: none;
-        margin: 0;
-    }
-    
-    .sidebar,
-    main {
-        overflow: visible;
-    }
-}
-
-/* ================================
    PAGE BREAK HANDLING
    ================================ */
 .main-section {
@@ -208,3 +175,8 @@ main {
 .job-entry {
     page-break-inside: avoid;
 }
+
+.education-entry {
+    page-break-inside: avoid;
+}
+

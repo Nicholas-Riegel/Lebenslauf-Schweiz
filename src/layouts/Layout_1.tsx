@@ -1,10 +1,22 @@
 // disabling no-explicit-any because nested json more trouble than worth for this app
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from './Layout_1.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faMobileScreenButton, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Layout1 = ({ data }: { data: any }) => {
   
-	const { image, sidebar, header, summary, skills, employment, education } = data;
+	const { 
+		image, 
+		personal_data, 
+		contact, 
+		languages, 
+		header, 
+		summary, 
+		skills, 
+		employment, 
+		education 
+	} = data;
 
 	return (
 		<div className={styles['container']}>
@@ -17,21 +29,34 @@ const Layout1 = ({ data }: { data: any }) => {
 					<img src={image.path} alt={image.alt} />
 				</div>
 
-				{/* Sidebar Sections */}
-				{sidebar.sections.map((section: any) => (
-					<section key={section.type} className={`${styles['sidebar-section']} ${styles[section.type]}`}>
-						<h3 className={styles['sidebar-title']}>{section.title}</h3>
-						{section.items.map((item: any, i: number) => (
-							<p key={i}>
-								<strong>{item.label}:</strong>{' '}
-								{item.url
-									? (<a href={item.url} target="_blank">{item.value}</a>)
-									: (item.value)
-								}
-							</p>
-						))}
-					</section>
-				))}
+				{/* Personal Data */}
+				<section className={`${styles['sidebar-section']}`}>
+					<h2 className={`${styles['sidebar-title']}`}>{personal_data.title}</h2>
+					{personal_data.items.map((item: any, i: number) => (
+						<p key={i}>{item.label}: {item.value}</p>
+					))}
+				</section>
+
+				{/* Contact */}
+				<section className={`${styles['sidebar-section']}`}>
+					<h2 className={`${styles['sidebar-title']}`}>{contact.title}</h2>
+					<FontAwesomeIcon icon={faEnvelope} />
+					<p>{contact.email}</p>
+					<FontAwesomeIcon icon={faMobileScreenButton} />
+					<p>{contact.phone}</p>
+					<FontAwesomeIcon icon={faLocationDot} />
+					<p>{contact.location}</p>
+				</section>
+				
+				{/* Languages */}
+				<section className={`${styles['sidebar-section']}`}>
+					<h2 className={`${styles['sidebar-title']}`}>{languages.title}</h2>
+					{languages.items.map((item: any, i: number) => (
+						<p key={i}>{item.label}: {item.value}</p>
+					))}
+				</section>
+
+				{/* Soft Skills */}
 
 			</aside>
 
@@ -44,7 +69,11 @@ const Layout1 = ({ data }: { data: any }) => {
 
 				{/* Professional Summary */}
 				<section className={styles['main-section']}>
-					<p>{summary.content}</p>
+					<ul className={styles['summary']}>
+						{summary.items.map((item: any) => (
+							<li key={item}>{item}</li>
+						))}
+					</ul>
 				</section>
 
 				{/* Skills */}
@@ -52,7 +81,7 @@ const Layout1 = ({ data }: { data: any }) => {
 					<h2 className={styles['section-title']}>{skills.title}</h2>
 					{skills.items.map((item: any, i: number) => (
 						<div key={i} className={styles['skill-entry']}>
-								<h3 className={styles['skill-type']}>{item.label}</h3>
+								<h3>{item.label}</h3>
 								<p className={styles['skill-list']}>{item.value}</p>
 						</div>
 					))}
@@ -84,10 +113,19 @@ const Layout1 = ({ data }: { data: any }) => {
 					{education.items.map((item: any, i: number) => (
 						<article key={i} className={styles['education-entry']}>
 							<div className={styles['edu-header']}>
-								<h3 className={styles['degree']}>{item.degree}</h3>
+								<h3 className={styles['degree']}>{item.degree_course}</h3>
 								<span className={styles['edu-date']}>{item.year}</span>
 							</div>
-							<h4 className={styles['school-name']}>{item.institution}</h4>
+							{ item.institution && 
+								(<h4 className={styles['school-name']}>{item.institution}</h4>) 
+							}
+							{ item.description && 
+								(<ul>
+									{item.description.map((item: any) => (
+										<li key={item}>{item}</li>
+									))}
+								</ul>)
+							}
 						</article>
 					))}
 				</section>
