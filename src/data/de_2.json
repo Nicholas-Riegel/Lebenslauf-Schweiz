@@ -12,7 +12,7 @@
         ]
     },
     "image": {
-        "path": "./images/profile_pic_polo.jpg",
+        "path": "./images/profile_pic_jacket.jpg",
         "alt": "Profile Picture"
     },
     "personal_data": {
@@ -20,7 +20,8 @@
         "type": "personliche_data",
         "items": [
             { "label": "Nationalität", "value": "CH, USA" },
-            { "label": "Heimatort", "value": "Corcelles-Cormondrèche (NE)" }
+            { "label": "Heimatort", "value": "Corcelles-Cormondrèche (NE)" },
+            { "label": "Geburtsdatum", "value": "02.12.1972" }
         ]
     },
     "contact": {

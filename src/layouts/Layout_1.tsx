@@ -23,7 +23,10 @@ const Layout1 = ({ data }: { data: any }) => {
 			
 			{/* Sidebar */}
 			<aside className={styles['sidebar']}>
-		
+				
+				{/* Background Square */}
+				<div className={styles['background-square']}></div>
+
 				{/* Profile Picture */}
 				<div className={styles['profile-picture']}>
 					<img src={image.path} alt={image.alt} />
@@ -40,12 +43,12 @@ const Layout1 = ({ data }: { data: any }) => {
 				{/* Contact */}
 				<section className={`${styles['sidebar-section']}`}>
 					<h2 className={`${styles['sidebar-title']}`}>{contact.title}</h2>
-					<FontAwesomeIcon icon={faEnvelope} />
-					<p>{contact.email}</p>
-					<FontAwesomeIcon icon={faMobileScreenButton} />
-					<p>{contact.phone}</p>
 					<FontAwesomeIcon icon={faLocationDot} />
 					<p>{contact.location}</p>
+					<FontAwesomeIcon icon={faMobileScreenButton} />
+					<p>{contact.phone}</p>
+					<FontAwesomeIcon icon={faEnvelope} />
+					<p>{contact.email}</p>
 				</section>
 				
 				{/* Languages */}
@@ -70,8 +73,8 @@ const Layout1 = ({ data }: { data: any }) => {
 				{/* Professional Summary */}
 				<section className={styles['main-section']}>
 					<ul className={styles['summary']}>
-						{summary.items.map((item: any) => (
-							<li key={item}>{item}</li>
+						{summary.items.map((item: any, i: number) => (
+							<li key={i}>{item}</li>
 						))}
 					</ul>
 				</section>
