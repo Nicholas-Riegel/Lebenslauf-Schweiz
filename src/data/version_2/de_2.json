@@ -6,9 +6,9 @@
     "summary": {
         "title": "BERUFLICHES PROFIL",
         "items": [
-            "Software Engineer mit Erfahrung in Full-Stack-Entwicklung und KI-gestützten Anwendungen.",
-            "Fundierte Kenntnisse in Python, JavaScript/TypeScript, React, FastAPI und REST APIs.", 
-            "Erfahrung mit Software Testing, Datenbanken, Docker und agiler Entwicklung."
+            "Softwareentwickler mit Erfahrung in Full-Stack-Entwicklung und Backend-Systemen.",
+            "Entwicklung und Integration KI-gestützter Anwendungen mit LLMs und generativer KI.",
+            "Erfahrung in Software Testing, Qualitätssicherung und agiler Zusammenarbeit."
         ]
     },
     "image": {
@@ -20,43 +20,48 @@
         "type": "personliche_data",
         "items": [
             { "label": "Nationalität", "value": "CH, USA" },
-            { "label": "Heimatort", "value": "Corcelles-Cormondrèche (NE)" },
+            { "label": "Heimatort", "value": "Corcelles-Cormondrèche" },
+            { "label": "E-Mail", "value": "nicholaspriegel@gmail.com" },
+            { "label": "Telefon", "value": "+41 77 469 5519" },
+            { "label": "Wohnort", "value": "Bern, Schweiz" },
             { "label": "Geburtsdatum", "value": "02.12.1972" }
         ]
-    },
-    "contact": {
-        "title": "Kontakt",
-        "type": "contacts",
-        "email": "nicholaspriegel@gmail.com",
-        "location": "Bern, Schweiz",
-        "phone": "+41 77 469 5519",
-        "linkedIn": "/in/nicholas-riegel", 
-        "linkedInUrl": "https://www.linkedin.com/in/nicholas-riegel"
     },
     "languages": {
         "title": "Sprachen",
         "type": "languages",
         "items": [
             { "label": "Deutsch", "value": "B2 – aktuell im C1-Kurs" },
-            { "label": "Französisch", "value": "Fliessend" },
+            { "label": "Französisch", "value": "C1" },
             { "label": "Englisch", "value": "Muttersprache" }
         ]
     },
     "skills": {
         "title": "IT Kenntnisse",
         "items": [
-            { "label": "Programmiersprachen", "value": "Java, C#, TypeScript, Python" },
+            { "label": "Programmiersprachen", "value": "Java, C#, Python, JavaScript, TypeScript" },
+            { "label": "KI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
             { "label": "Frameworks & Plattformen", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
             { "label": "Datenbanken", "value": "PostgreSQL, MySQL, MongoDB" },
-            { "label": "KI & LLM", "value": "OpenAI API, DeepSeek API, Ollama, RAG"},
             { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium"},
             { "label": "Webtechnologien", "value": "HTML5, CSS3, Tailwind CSS"},
             { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira"},
             { "label": "Methoden", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST-APIs, MVC, TDD"}
         ]
     },
+    "personal_skills": {
+        "title": "Kompetenzen",
+        "items":[
+            "Selbstständige und strukturierte Arbeitsweise",
+            "Sorgfalt und Präzision",
+            "Schnelle Auffassungsgabe und selbstständiges Lernen",
+            "Problemlösungskompetenz",
+            "Teamfähigkeit und Verantwortungsbewusstsein"
+        ]
+    },
     "employment": {
         "title": "Berufliche Erfahrung",
+        "continued_title": "(Fortsetzung)",
         "items": [
             {
                 "title": "Softwareentwickler",
@@ -69,7 +74,7 @@
                     "Erstellung einer Browsererweiterung zur Integration von LLM-Funktionen in Web-Workflows.",
                     "Design von Backend-APIs für KI-Interaktionspipelines mit FastAPI und SQLAlchemy.",
                     "Integration generativer KI-Modelle über OpenAI- und DeepSeek-APIs.",
-                    "Containerisierung von Diensten mit Docker für skalierbare Bereitstellung."
+                    "Containerisierung von Diensten mit Docker."
                 ]
             },
             {
@@ -117,5 +122,9 @@
                 "institution": "University of Toronto, Toronto, Kanada"
             }
         ]
+    },
+    "footers": {
+        "page_1": "Nicholas Riegel | nicholaspriegel@gmail.com | +41 77 469 5519 | Seite 1 von 2",
+        "page_2": "Nicholas Riegel | nicholaspriegel@gmail.com | +41 77 469 5519 | Seite 2 von 2"
     }
 }

@@ -1,0 +1,130 @@
+{
+    "header": {
+        "name": "Nicholas Riegel",
+        "title": "Software Developer"
+    },
+    "summary": {
+        "title": "PROFESSIONAL PROFILE",
+        "items": [
+            "Software developer with experience in full-stack development and backend systems.",
+            "Development and integration of AI-powered applications using LLMs and generative AI.",
+            "Experience in software testing, quality assurance, and agile collaboration."
+        ]
+    },
+    "image": {
+        "path": "./images/profile_pic_jacket.jpg",
+        "alt": "Profile Picture"
+    },
+    "personal_data": {
+        "title": "Personal Details",
+        "type": "personal_data",
+        "items": [
+            { "label": "Nationality", "value": "CH, USA" },
+            { "label": "Place of Origin", "value": "Corcelles-Cormondrèche" },
+            { "label": "Email", "value": "nicholaspriegel@gmail.com" },
+            { "label": "Phone", "value": "+41 77 469 5519" },
+            { "label": "Location", "value": "Bern, Switzerland" },
+            { "label": "Date of Birth", "value": "02.12.1972" }
+        ]
+    },
+    "languages": {
+        "title": "Languages",
+        "type": "languages",
+        "items": [
+            { "label": "German", "value": "B2 – currently studying at C1 level" },
+            { "label": "French", "value": "C1" },
+            { "label": "English", "value": "Native" }
+        ]
+    },
+    "skills": {
+        "title": "Technical Skills",
+        "items": [
+            { "label": "Programming Languages", "value": "Java, C#, Python, JavaScript, TypeScript" },
+            { "label": "AI & LLMs", "value": "OpenAI API, DeepSeek API, Ollama, RAG" },
+            { "label": "Frameworks & Platforms", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
+            { "label": "Databases", "value": "PostgreSQL, MySQL, MongoDB" },
+            { "label": "Testing & QA", "value": "Pytest, Playwright, Selenium" },
+            { "label": "Web Technologies", "value": "HTML5, CSS3, Tailwind CSS" },
+            { "label": "Tools & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira" },
+            { "label": "Methods & Practices", "value": "Agile, Scrum, Kanban, OOP, CI/CD, REST APIs, MVC, TDD" }
+        ]
+    },
+    "personal_skills": {
+        "title": "Professional Skills",
+        "items": [
+            "Independent and organized",
+            "Detail-oriented",
+            "Quick learner",
+            "Analytical problem solver",
+            "Collaborative and reliable"
+        ]
+    },
+    "employment": {
+        "title": "Professional Experience",
+        "continued_title": "(Continued)",
+        "items": [
+            {
+                "title": "Software Developer",
+                "dates": "2024 – 2026",
+                "company": "B.E. Moore, LLC",
+                "accomplishments": [
+                    "Developed AI-powered collaboration tools integrating LLMs into productivity workflows to improve team efficiency and automate repetitive tasks.",
+                    "Developed an AI-powered chat platform using Python, FastAPI, PostgreSQL, and React.",
+                    "Developed an AI-powered email automation system for analyzing, categorizing, and responding to incoming messages.",
+                    "Created a browser extension for integrating LLM functionality into web-based workflows.",
+                    "Designed backend APIs for AI interaction pipelines using FastAPI and SQLAlchemy.",
+                    "Integrated generative AI models through the OpenAI and DeepSeek APIs.",
+                    "Containerized services using Docker."
+                ]
+            },
+            {
+                "title": "Software QA Engineer",
+                "dates": "2021–2024",
+                "company": "CourseStorm, Inc.",
+                "accomplishments": [
+                    "Established the company's initial QA processes and testing standards as its sole QA engineer.",
+                    "Built an automated end-to-end test suite using Laravel Dusk (PHP) to reduce regression defects.",
+                    "Validated REST APIs and backend logic using Postman and direct database queries.",
+                    "Collaborated with development and product teams to define acceptance criteria within agile sprint cycles.",
+                    "Performed root-cause analysis of complex production issues to prevent recurring failures."
+                ]
+            },
+            {
+                "title": "Lecturer",
+                "dates": "2015–2020",
+                "company": "University of Bern | Migros Club School | The Hill School",
+                "accomplishments": [
+                    "Taught philosophy and English at various institutions in Switzerland and the United States."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Education & Professional Development",
+        "items": [
+            {
+                "degree_course": "German C1 Course",
+                "year": "Ongoing",
+                "institution": "Private Instruction, Bern"
+            },
+            {
+                "degree_course": "Data Structures & Algorithms",
+                "year": "Ongoing",
+                "description": [
+                    "Data structures, Big-O notation, recursion, and algorithms",
+                    "Sorting and search algorithms, linked lists, trees, and graphs",
+                    "Fundamentals of dynamic programming"
+                ]
+            },
+            {
+                "degree_course": "Ph.D. in Philosophy",
+                "year": "2010",
+                "institution": "University of Toronto, Toronto, Canada"
+            }
+        ]
+    },
+    "footers": {
+        "page_1": "Nicholas Riegel | nicholaspriegel@gmail.com | +41 77 469 5519 | Page 1 of 2",
+        "page_2": "Nicholas Riegel | nicholaspriegel@gmail.com | +41 77 469 5519 | Page 2 of 2"
+    }
+}

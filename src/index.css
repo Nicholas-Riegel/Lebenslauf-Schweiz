@@ -28,7 +28,7 @@ body {
 
 /* Typography - applies to both layouts */
 h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -92,14 +92,12 @@ body::after {
 /* ================================
    PRINT OPTIMIZATION
    ================================ */
-@media print {
-    /* Hide visual page break guide on print */
+/* @media print {
     body::before,
     body::after {
         display: none !important;
     }
     
-    /* Optimize for A4 printing */
     body {
         background: white;
         margin: 0;
@@ -119,12 +117,43 @@ body::after {
         overflow: visible;
     }
 
-     /* Preserve background colors if needed */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+} */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        box-shadow: none;
+
+        break-after: page;
+        page-break-after: always;
+    }
+
+    .page:last-child {
+        break-after: auto;
+        page-break-after: auto;
+    }
+
     * {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 }
-
-
 

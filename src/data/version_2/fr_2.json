@@ -1,0 +1,130 @@
+{
+    "header": {
+        "name": "Nicholas Riegel",
+        "title": "Développeur logiciel"
+    },
+    "summary": {
+        "title": "PROFIL PROFESSIONNEL",
+        "items": [
+            "Développeur logiciel avec une expérience en développement full-stack et en systèmes backend.",
+            "Développement et intégration d'applications basées sur l'IA utilisant des LLM et l'IA générative.",
+            "Expérience en tests logiciels, assurance qualité et collaboration dans des équipes agiles."
+        ]
+    },
+    "image": {
+        "path": "./images/profile_pic_jacket.jpg",
+        "alt": "Photo de profil"
+    },
+    "personal_data": {
+        "title": "Données personnelles",
+        "type": "personal_data",
+        "items": [
+            { "label": "Nationalité", "value": "CH, USA" },
+            { "label": "Lieu d'origine", "value": "Corcelles-Cormondrèche" },
+            { "label": "E-mail", "value": "nicholaspriegel@gmail.com" },
+            { "label": "Téléphone", "value": "+41 77 469 5519" },
+            { "label": "Domicile", "value": "Berne, Suisse" },
+            { "label": "Date de naissance", "value": "02.12.1972" }
+        ]
+    },
+    "languages": {
+        "title": "Langues",
+        "type": "languages",
+        "items": [
+            { "label": "Allemand", "value": "B2 – actuellement en formation C1" },
+            { "label": "Français", "value": "C1" },
+            { "label": "Anglais", "value": "Langue maternelle" }
+        ]
+    },
+    "skills": {
+        "title": "Compétences techniques",
+        "items": [
+            { "label": "Langages de programmation", "value": "Java, C#, Python, JavaScript, TypeScript" },
+            { "label": "IA & LLM", "value": "API OpenAI, API DeepSeek, Ollama, RAG" },
+            { "label": "Frameworks & plateformes", "value": "Spring Boot, .NET, ASP.NET Core, FastAPI, React, Redux Toolkit, Express, Node.js" },
+            { "label": "Bases de données", "value": "PostgreSQL, MySQL, MongoDB" },
+            { "label": "Tests & QA", "value": "Pytest, Playwright, Selenium" },
+            { "label": "Technologies web", "value": "HTML5, CSS3, Tailwind CSS" },
+            { "label": "Outils & DevOps", "value": "Git, GitHub, Docker, AWS, Postman, Jira" },
+            { "label": "Méthodes & pratiques", "value": "Agile, Scrum, Kanban, POO, CI/CD, API REST, MVC, TDD" }
+        ]
+    },
+    "personal_skills": {
+        "title": "Compétences personnelles",
+        "items": [
+            "Autonomie et sens de l'organisation",
+            "Rigueur et précision",
+            "Capacité d'apprentissage et autonomie",
+            "Esprit d'analyse et résolution de problèmes",
+            "Esprit d'équipe et sens des responsabilités"
+        ]
+    },
+    "employment": {
+        "title": "Expérience professionnelle",
+        "continued_title": "(Suite)",
+        "items": [
+            {
+                "title": "Développeur logiciel",
+                "dates": "2024 – 2026",
+                "company": "B.E. Moore, LLC",
+                "accomplishments": [
+                    "Développement d'outils collaboratifs basés sur l'IA intégrant des LLM dans les flux de travail afin d'améliorer l'efficacité des équipes et d'automatiser les tâches répétitives.",
+                    "Développement d'une plateforme de chat basée sur l'IA avec Python, FastAPI, PostgreSQL et React.",
+                    "Développement d'un système d'automatisation des e-mails basé sur l'IA pour analyser, catégoriser et traiter les messages entrants.",
+                    "Création d'une extension de navigateur permettant d'intégrer des fonctionnalités LLM dans les flux de travail web.",
+                    "Conception d'API backend pour des pipelines d'interaction avec l'IA à l'aide de FastAPI et SQLAlchemy.",
+                    "Intégration de modèles d'IA générative via les API OpenAI et DeepSeek.",
+                    "Conteneurisation de services avec Docker."
+                ]
+            },
+            {
+                "title": "Ingénieur QA logiciel",
+                "dates": "2021–2024",
+                "company": "CourseStorm, Inc.",
+                "accomplishments": [
+                    "Mise en place des premiers processus QA et standards de test de l'entreprise en tant qu'unique ingénieur QA.",
+                    "Développement d'une suite de tests end-to-end automatisés avec Laravel Dusk (PHP) afin de réduire les régressions.",
+                    "Validation des API REST et de la logique backend à l'aide de Postman et de requêtes directes sur les bases de données.",
+                    "Collaboration avec les équipes de développement et produit pour définir les critères d'acceptation dans le cadre de sprints agiles.",
+                    "Analyse des causes profondes de problèmes complexes en production afin d'éviter leur réapparition."
+                ]
+            },
+            {
+                "title": "Chargé de cours",
+                "dates": "2015-2020",
+                "company": "Université de Berne | Migros École-club | The Hill School",
+                "accomplishments": [
+                    "Enseignement de la philosophie et de l'anglais dans différents établissements en Suisse et aux États-Unis."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Formation & perfectionnement",
+        "items": [
+            {
+                "degree_course": "Cours d'allemand C1",
+                "year": "En cours",
+                "institution": "Cours particuliers, Berne"
+            },
+            {
+                "degree_course": "Structures de données & algorithmes",
+                "year": "En cours",
+                "description": [
+                    "Structures de données, notation Big-O, récursivité et algorithmes",
+                    "Algorithmes de tri et de recherche, listes chaînées, arbres et graphes",
+                    "Bases de la programmation dynamique"
+                ]
+            },
+            {
+                "degree_course": "Doctorat en philosophie (Ph.D.)",
+                "year": "2010",
+                "institution": "University of Toronto, Toronto, Canada"
+            }
+        ]
+    },
+    "footers": {
+        "page_1": "Nicholas Riegel | nicholaspriegel@gmail.com | +41 77 469 5519 | Page 1 sur 2",
+        "page_2": "Nicholas Riegel | nicholaspriegel@gmail.com | +41 77 469 5519 | Page 2 sur 2"
+    }
+}

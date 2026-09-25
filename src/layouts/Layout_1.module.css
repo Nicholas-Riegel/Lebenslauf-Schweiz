@@ -1,6 +1,5 @@
 .container {
     position: relative;
-    display: flex;
     width: 210mm;
     min-height: 297mm;
     margin: 20px auto;
@@ -10,9 +9,27 @@
     page-break-after: always;
 }
 
+.page_1 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: minmax(0, 1fr) 40px;
+
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+}
+
+.page_2 {
+    display: grid;
+    /* grid-template-columns: 40% 60%; */
+    grid-template-rows: minmax(0, 1fr) 40px;
+
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+}
+
 .sidebar {
-    width: 40%;
-    background-color: #85a4dd6d;  /* Change this to your desired color */
     padding: 30px 20px 30px 40px;
     overflow: visible;
     display: flex;
@@ -20,13 +37,23 @@
 }
 
 .background-square {
-    background-color: rgb(19, 129, 239);
-    height: 200px;
-    width: 330px;
+    background-color: rgb(65, 95, 142);
+    height: 230px;
+    width: 350px;
     left: 0;
     top: 15px;
     position: absolute;
     z-index: 0;
+}
+
+.divider {
+    position: absolute;
+    border-left: 7px solid rgb(31, 54, 91);
+    border-top: 7px solid rgb(31, 54, 91);
+    height: 930px;
+    width: 80px;
+    left: 320px;
+    top: 115px;
 }
 
 .profile-picture {
@@ -45,11 +72,15 @@
 }
 
 .sidebar-section {
-    text-align: center;
     margin-bottom: 15px;    
 }
 
+.sidebar-section ul {
+    padding-left: 15px;
+}
+
 .sidebar-title {
+    text-align: center;
     font-weight: 700;
     margin-bottom: 12px;
     padding-bottom: 8px;
@@ -68,13 +99,18 @@
     margin-bottom: 8px;
 }
 
-main {
-    width: 70%;
-    padding: 120px 40px 30px 40px;
+.page_1 main {
+    padding: 90px 40px 30px 40px;
     overflow: visible;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
+}
+
+.page_2 main {
+    padding: 50px 40px 30px 40px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -173,6 +209,15 @@ main {
 .edu-details {
     color: #666;
     margin: 0;
+}
+
+.footer {
+    color: white;
+    background-color: rgb(65, 95, 142);
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ================================
