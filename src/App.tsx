@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Layout_1 from './layouts/Layout_1'
-import Layout_2 from './layouts/Layout_2'
+// import Layout_2 from './layouts/Layout_2'
 import data_de from './data/version_2/de_2.json'
 import data_fr from './data/version_2/fr_2.json'
 import data_en from './data/version_2/en_2.json'
@@ -43,8 +43,8 @@ function App() {
 		switch (_layout) {
 			case '1':
 				return <Layout_1 data={_data} />;
-			case '2':
-				return <Layout_2 data={_data} />;
+			// case '2':
+				// return <Layout_2 data={_data} />;
 			default:
 				return <Layout_1 data={_data} />;
 		}
@@ -73,7 +73,7 @@ function App() {
 					value={selectedLayout}
 					onChange={handleLayoutChange}>
 					<option value="1">Layout 1</option>
-					<option value="2">Layout 2</option>
+					{/* <option value="2">Layout 2</option> */}
 				</select>
 			</div>
 

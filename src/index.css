@@ -92,63 +92,22 @@ body::after {
 /* ================================
    PRINT OPTIMIZATION
    ================================ */
-/* @media print {
-    body::before,
-    body::after {
-        display: none !important;
-    }
-    
-    body {
-        background: white;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .container {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        box-shadow: none;
-        page-break-after: always;
-    }
-    
-    .sidebar,
-    .content {
-        overflow: visible;
-    }
-
-    * {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-} */
-
 @media print {
-
     @page {
         size: A4;
         margin: 0;
     }
 
+    html,
     body {
         margin: 0;
         padding: 0;
         background: white;
     }
 
-    .page {
-        width: 210mm;
-        height: 297mm;
-        margin: 0;
-        box-shadow: none;
-
-        break-after: page;
-        page-break-after: always;
-    }
-
-    .page:last-child {
-        break-after: auto;
-        page-break-after: auto;
+    body::before,
+    body::after {
+        display: none !important;
     }
 
     * {
@@ -156,4 +115,3 @@ body::after {
         print-color-adjust: exact;
     }
 }
-
